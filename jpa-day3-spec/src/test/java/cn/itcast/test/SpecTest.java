@@ -98,4 +98,8 @@ public class SpecTest {
 
 
     }
+    @Test
+    public void test(){
+        System.out.println("hahahaha");
+    }
 }
