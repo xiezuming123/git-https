@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface CustomerDao extends JpaRepository<Customer,Long>,JpaSpecificationExecutor<Customer>{
 
-    @Query(value = "from Customer where custName = ?")
+ /*   @Query(value = "from Customer where custName = ?")
     public Customer findJpql(String custName);
 
 
@@ -27,5 +27,8 @@ public interface CustomerDao extends JpaRepository<Customer,Long>,JpaSpecificati
 
     public Customer findByCustName(String name);
 
-    public List<Customer> findByCustNameLike(String name);
+    public List<Customer> findByCustNameLike(String name);*/
+ //我不用这些了所有我都注释了
+ public List<Customer> findByCustNameLike(String name);
+
 }
